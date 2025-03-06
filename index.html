@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-container">
+                <div class="input-element">
+                    <input id="number1" class="red-border" type="number">
+                </div>
+                <div class="input-element">
+                    <select id="operation" class="red-border">
+                        <option>+</option>
+                        <option>-</option>
+                        <option>*</option>
+                        <option>/</option>
+                    </select>
+                </div>
+                <div class="input-element">
+                    <input id="number2" class="red-border" type="number">
+                </div>
+            </div>
+            <button class="red-border calculate" onclick="whenButtonClick()">подсчитать</button>
+            <div class="history red-border">
+                <div class="previous-calc" id="previous-calc"></div>
+                <div class="current-calc" id="current-calc"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

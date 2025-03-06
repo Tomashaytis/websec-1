@@ -1,0 +1,49 @@
+.red-border {
+    background-color: #baffc2;
+    border: red dashed 2px;
+    border-radius: 10px;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    color: red;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #baffc2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.calculate {
+    margin: 10px 0;
+    background-color: #baffc2;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.input-element {
+    margin: 10px 0;
+}
+
+.history {
+    margin: 10px 0;
+    width: 90%;
+    min-height: 100px;
+}
+
+.previous-calc {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.error-input {
+    border: red solid 2px;
+    border-radius: 10px;
+}
