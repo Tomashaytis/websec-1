@@ -1,14 +1,15 @@
 <html>
     <head>
+        <title>Калькулятор</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
             <div class="input-container">
-                <div class="input-element">
+                <div class="input-number">
                     <input id="number1" class="red-border" type="number">
                 </div>
-                <div class="input-element">
+                <div class="select-operation">
                     <select id="operation" class="red-border">
                         <option>+</option>
                         <option>-</option>
@@ -16,12 +17,12 @@
                         <option>/</option>
                     </select>
                 </div>
-                <div class="input-element">
+                <div class="input-number">
                     <input id="number2" class="red-border" type="number">
                 </div>
             </div>
-            <button class="red-border calculate" onclick="whenButtonClick()">подсчитать</button>
-            <div class="history red-border">
+            <button class="calculate red-border" onclick="whenButtonClick()">подсчитать</button>
+            <div class="result-panel red-border">
                 <div class="previous-calc" id="previous-calc"></div>
                 <div class="current-calc" id="current-calc"></div>
             </div>

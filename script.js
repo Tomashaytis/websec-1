@@ -9,6 +9,7 @@ function whenButtonClick() {
     number2 = parseFloat(numberElem2.value);
 
     if (isNaN(number1)) {
+        alert("Ошибка. В первой ячейке введено не число.");
         numberElem1.classList.add("error-input");
         return;
     } else {
@@ -16,6 +17,7 @@ function whenButtonClick() {
     }
 
     if (isNaN(number2)) {
+        alert("Ошибка. Во второй ячейке введено не число.");
         numberElem2.classList.add("error-input");
         return;
     } else {
@@ -35,7 +37,7 @@ function whenButtonClick() {
             break;
         case '/':
             if (Math.abs(number2) < Number.EPSILON) {
-                alert("Деление на ноль!");
+                alert("Ошибка. Деление на ноль.");
                 numberElem2.classList.add("error-input")
                 return;
             }
